@@ -53,31 +53,47 @@ h1,h2,h3,h4,h5,h6,p{
  font-size: 16px;
  font-weight: 500;
  padding: 0 30px;
- text-transform: capitalize;
+ 
 }
 #images_main form input::placeholder{
     color: #222;
     font-size: 18px;
+    text-transform: capitalize;
 }
 #images_main form button{
- border: none;
- outline: none;
- height: 100%;
- color: #ffffff;
- font-size: 16px;
- font-weight: 500;
- padding: 0 40px;
- text-transform: capitalize;
- background-color: blue;
- cursor: pointer;
- border-top-right-radius: 5px;
- border-bottom-right-radius: 5px;
+    border: none;
+    outline: none;
+    height: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 40px;
+    text-transform: capitalize;
+    background-color: blue;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 
 }
 #search_result{
     text-align: center;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+    margin: 50px auto 50px;
 }
-#search_result #show_btn{
+#search_result img{
+   width: 100%;
+   height: 250px;
+   object-fit: cover;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+ #show_btn{
     background-color: blue;
     border: none;
     outline: none;
@@ -91,6 +107,7 @@ h1,h2,h3,h4,h5,h6,p{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     cursor: pointer;
-    margin-top: 30px;
+    display: none;
+    margin: 50px auto 50px;
 }
 /*=============== images-search part end here  ==============*/
